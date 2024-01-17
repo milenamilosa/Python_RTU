@@ -1,4 +1,3 @@
-import pandas as pd
 import selenium
 from selenium import webdriver
 from selenium.webdriver.chrome.service import Service
@@ -9,6 +8,7 @@ import time
 from tabulate import tabulate
 
 item = input("Ievadiet meklējamo preci: ")                      # meklējamās preces ievade no klaviatūras (rekomendējamā ievade: lego)
+budget = input("Ievadiet budžetu: ")
 # item = "lego"                                                 # atkomentēt, ja negrib vadīt preci no klaviatūras
 
 service = Service()
@@ -35,7 +35,8 @@ action.double_click(on_element = price)                         # dubultklikšķ
 action.perform()                                                # dubultklikšķa izpilde
 time.sleep(1)
 
-price.send_keys(200)                                            # ievada lietotāja budžetu (cenas augstāko robežu)
+price.send_keys(budget)                                         # ievada lietotāja budžetu (rekomendējamā ievade: 200)
+# price.send_keys(200)                                          # atkomentēt, ja negrib vadīt budžetu no klaviatūras 
 price.send_keys(Keys.ENTER)
 time.sleep(2)
 
