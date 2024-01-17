@@ -1,4 +1,3 @@
-import selenium
 from selenium import webdriver
 from selenium.webdriver.chrome.service import Service
 from selenium.webdriver.common.by import By
@@ -59,4 +58,4 @@ for preces_cena in driver.find_elements(By.XPATH, '//span[@class = "catalog-taxo
 
 
 table = zip(cenas, nosaukumi)
-print(tabulate(sorted(table), headers=["Preces nosaukums", "Preces cena"], tablefmt="github"))      # izvada pirmo 48 populārāko preču sarakstu filtrējot no zemākās cenas līdz augstākai
+print(tabulate(sorted(table), headers=["Preces cena", "Preces nosaukums"], tablefmt="github"))      # izvada pirmo 48 populārāko preču sarakstu filtrējot no zemākās cenas līdz augstākai
