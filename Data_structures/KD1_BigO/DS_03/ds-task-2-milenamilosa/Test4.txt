@@ -1,0 +1,55 @@
+1. Kura no pamatdatu struktūrām ir vispiemērotākā, ja nepieciešams piekļūt
+tās elementiem pēc to pozīcijām laikā O(1) (nejauša piekļuve)?
+- array
+2. Kura no pamatdatu struktūrām ir vispiemērotākā, ja vēlies ievietot elementus vidū ar O(1) laika sarežģitību?
+- list
+3. Kura no pamatdatu struktūrām ir vispiemērotākā, ja nepieciešams pievienot elementus no aizmugures un izņemt elementus no priekšas?
+- queue
+4. Kura no pamatdatu struktūrām ir vispiemērotākā, ja nepieciešams implementēt rekursiju programmēšanas valodā?
+Veicot rekursīvu izsaukumu, jums jāsaglabā pašreizējā funkcija un tās parametru vērtības kādā datu struktūrā, lai
+izkāpjot no rekursīvā izsaukuma, jums vienmēr būs jāizņem pēdējais elements, kas tika ievietots datu struktūrā.
+- stack
+5. Kura no pamatdatu struktūrām ir vispiemērotākā, ja nepieciešams glābāt cietā diskā direktoriju struktūru?
+- tree
+6. Kāda no datu struktūrām darbojas pēc principa LIFO (last-in/first-out)?
+- stack
+7. Kāda no datu struktūrām darbojas pēc principa FIFO / LILO ?
+- queue
+
+8. Двои́чное де́рево (Бинарное дерево) — иерархическая структура данных, в которой каждый узел имеет не более двух потомков (детей). 
+Как правило, первый называется родительским узлом (nod), а дети называются левым и правым наследниками(children). 
+
+Бинарные деревья поиска отличаются от обычных бинарных деревьев тем, что хранят данные в отсортированном виде. 
+Хранение значений внутри бинарного дерева поиска организовано в следующем виде:
+
+-Все значения в узлах левого дочернего поддерева меньше значения родительского узла
+
+-Все значения в узлах правого дочернего поддерева больше значения родительского узла
+
+-Каждый дочерний узел тоже является бинарным деревом поиска
+
+Благодаря такой структуре хранения данных поиск узла в бинарном дереве поиска занимает O(logn). 
+Это значительно меньше, если хранить значения в списках — O(n).
+ 
+9. .dequeue() - убирается первый элемент сначала
+.enquque() - добавляется элемент в конец очереди
+.peek() - выводит первый элемент в очереди
+.pop() - достать последний в случае стэка
+list.pop(0) - достать нулевой элем из списка
+.push() - положить в стэке 
+.append() - добавить в конец списка
+list.insert(0,11) - добавить на 0 позицию число 11 (со сдвигом всех элем вправо)
+
+
+10. 
+Data structure		Addition	Search		Deletion	Access by index		
+Array (T[])		O(N)		O(N)		O(N)		O(1)
+
+Linked list 		O(1)		O(N)		O(N)		O(N)
+(LinkedList<T>)
+
+Stack (Stack<T>)	O(1)		-		O(1)		-
+
+Queue (Queue<T>)	O(1)		-		O(1)		-
+
+https://www.bigocheatsheet.com
